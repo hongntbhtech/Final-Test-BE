@@ -10,6 +10,8 @@ const db = mysql.createConnection({
 
 class AuthController {
 
+
+
     //[/GET]
     getListAuth(req, res, next) {
         const query = "SELECT * FROM user ORDER BY name ASC LIMIT 0, 100";
