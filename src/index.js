@@ -5,12 +5,12 @@ const cors = require('cors');
 
 const PORT = 4001
 const corsOptions = {
-    origin: 'http://localhost:3000',
+    origin: 'https://final-test-ashy-nu.vercel.app',
     optionsSuccessStatus: 200
 };
 
 const app = express();
-app.use(cors(corsOptions));
+app.use(cors());
 app.use(express.json());
 
 app.use(express.static(path.join(__dirname, 'src/routes')));
